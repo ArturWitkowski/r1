@@ -1,0 +1,31 @@
+{
+  "name": "kodilla-grgunt-6_2",
+  "version": "1.0.0",
+  "description": "AW example grunt project",
+  "main": "index.js",
+  "scripts": {
+    "test": "kodilla-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturWitkowski/r1.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Artur Witkowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturWitkowski/r1/issues"
+  },
+  "homepage": "https://github.com/ArturWitkowski/r1#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-imagemagick": "^0.1.5",
+    "grunt-responsive-images": "^1.10.1",
+    "grunt-sass": "^2.0.0"
+  }
+}

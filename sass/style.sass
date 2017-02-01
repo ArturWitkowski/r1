@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+
+$tablet-max: "767px"
+$desktop-min: "768px"
+$desktop-max: "991px"
+
+$font-main-col: #00519E
+$font-slogan-col: #94bade
+$font-btn-col: #fff
+$bg-btn-col: #CCEBF1
+
+$bg-hovbtn-col: antiquewhite
+$font-liczby-col: #B1E4EE
+
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	border-radius: $radius
+
+*
+	box-sizing: border-box
+
+body
+	font-family: Lato, sans-serif
+	margin: 0
+	color: $font-main-col
+
+.container
+	max-width: 1200px
+	margin: 0 auto
+    
+ul
+	text-align: left
+
+header
+	background: $bg-btn-col
+	height: 50px
+	margin: 0 auto
+
+	&>nav
+		font-size: 0px
+		&:before,
+		&:after
+			content: ''
+			display: block
+			clear: both
+
+		&>img
+			padding: 10px 0
+
+		&>ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+			float: right
+
+			&>li
+				display: inline-block
+				font-size: 16px
+				font-weight: bold
+				&>a
+					padding: 0 20px
+					line-height: 50px
+					display: block
+					text-decoration: none
+					text-transform: uppercase
+					color: $font-main-col
+					&:hover 
+						background: #DAF3F8
+						font-weight: normal
+		
+h1
+	margin: 15px auto 5px auto
+	
+
+.hero
+	background: url(../images/orka1.jpg) 0/cover no-repeat
+	background-position: center center
+	height: 757px
+	position: relative
+	margin-bottom: 15px
+
+
+.slogan
+	max-width: 800px
+	padding-right: calc(50vw - 600px)
+	/* margin-top: 378px */
+	float: right
+	background-color: rgba(4, 5, 25, 0.45)
+	color: $font-slogan-col
+	padding-left: 15px
+	padding-bottom: 15px
+	text-transform: uppercase
+	position: absolute
+	right: 0
+	top: 75%
+	transform: translateY(-50%)
+
+.slogan2 
+	display: none
+	max-width: 100%
+	background-color: rgba(4, 5, 25, 0.45)
+	color: $font-slogan-col
+	padding: 15px
+	text-transform: uppercase
+
+
+.ico-btn 
+	background-color: $bg-btn-col
+	display: inline-block
+	+border-radius(10px)
+	font-size: 48px
+	text-align: center
+	margin: 0 auto
+	color: $font-btn-col
+	height: 75px
+	width: 75px
+	line-height: 75px
+	transform: scale
+	transition: all 0.7s ease
+	border: 2px solid $font-btn-col
+
+
+.ico-btn
+	&:hover 
+		background-color: $bg-hovbtn-col
+		transform: scale(0.8)
+	a 
+		color: $font-btn-col
+		
+
+.jumbotron 
+	font-size: 0px
+	img
+		width: 100%
+		height: 360px
+    
+
+
+section.team 
+	padding-top: 50px
+	background-color: $bg-btn-col
+	margin-bottom: 50px
+
+
+.portrait 
+	max-width: 80%
+	+border-radius(50%)
+	margin: 0 auto
+	line-height: 200px
+	width: 200px
+	height: 200px
+	overflow: hidden
+    
+	img 
+		height: 100%
+		width: 100%
+		+border-radius(50%)
+		opacity: .4
+		transition: all 1s ease
+		&:hover
+			opacity: 1
+		h4 
+			margin: 0
+        
+.veil
+	top: 55%
+	position: absolute
+	left: 50%
+	transform: translateX(-50%)
+	font-size: 0
+	transition: all .9s ease
+	text-shadow: 2px 2px 2px $font-btn-col
+
+
+.col-4
+	&:hover
+		.veil 
+			font-size: 26px
+			font-weight: bolder
+  
+.zObrazkiem
+	img
+		max-width: 100%
+		
+.text
+	text-align: left
+
+.licznik 
+    
+	font-weight: 700
+	font-size: 48px
+
+.liczby 
+	margin-bottom: 50px
+
+	h3 
+		color: $font-liczby-col
+        
+footer 
+	background-color: $bg-btn-col
+
+	p 
+		text-align: left
+		margin: 0
+
+
+#about 
+	padding: 5px 5px 25px 5px
+
+
+#about
+	&>div:nth-child(2)
+		&>.row
+			&>.col-4
+				&>p 
+					text-align: left
+					padding-left: 25%
+
+
+.row
+	&:before,
+	&:after 
+		content: ""
+		display: table
+		clear: both
+
+
+[class*="col-"] 
+	float: left
+	min-height: 1px
+	padding: 5px
+	text-align: center
+	position: relative
+
+
+.layer 
+	background-color: rgba(0,0,0,0.7)
+	height: 100%
+	width: 100%
+	transition: all .8s ease
+	position: absolute
+	left: 100%
+	top: 0
+	font-size: 12px
+	color: rgba(0,0,0, 0.7)
+
+	.fa 
+		position: relative
+		top: 50%
+		transform: translateY(-50%)
+		background-color: $bg-btn-col
+		padding: 5px
+		border-radius: 3px
+
+
+.copy 
+	background: $font-main-col
+	color: $font-btn-col
+	text-align: center
+	padding: 15px 0
+
+
+.col-3
+	&:hover
+		.ico-btn
+			background-color: $bg-hovbtn-col
+    
+.col-3
+	&:hover
+		h2
+			color: $bg-hovbtn-col
+    
+
+.col-jt
+	&:hover
+		.layer
+			left: 0
+
+
+.col-jt-lrg
+	&:hover
+		.layer
+			left: 0
+
+
+.col-jt 
+	width: 20% 
+	padding: 0px
+	overflow: hidden
+
+
+.col-jt-lrg
+	@extend .col-jt
+	width: 40%
+
+
+.col-1
+	width: 8.33%
+
+
+.col-2 
+	width: 16.66%
+
+
+.col-3 
+	width: 25%
+
+
+.col-4 
+	width: 33.33%
+
+
+.col-5 
+	width: 41.66%
+
+
+.col-6 
+	width: 50%
+
+
+.col-7 
+	width: 58.33%
+
+
+.col-8 
+	width: 66.66%
+
+
+.col-9 
+	width: 75%
+
+
+.col-10 
+	width: 83.33%
+
+
+.col-11 
+	width: 91.66%
+
+
+.col-12 
+	width: 100%
+
+
+.col-offset-1 
+	margin-left: 8.33%
+
+.col-offset-2
+	margin-left: 16.66%
+    
+.col-offset-3
+	margin-left: 25%
+
+.col-offset-4
+	margin-left: 33.33%
+
+.col-offset-5
+	margin-left: 41.66%
+    
+.col-offset-6
+	margin-left: 50%
+    
+.col-offset-7
+	margin-left: 58.33%
+    
+.col-offset-8
+	margin-left: 66.66%
+    
+.col-offset-9
+	margin-left: 75%
+    
+.col-offset-10
+	margin-left: 83.33%
+    
+.col-offset-11
+	margin-left: 91.66%	
+
+@media (max-width: $tablet-max)
+	.col-4 .veil
+		font-size: 26px
+		font-weight: bolder
+
+	.portrait
+		img 
+			opacity: 1
+
+
+	.featured-works
+		[class*="col-"]
+			padding: 30px
+
+
+	.col-s-1
+		width: 8.33%
+	.col-s-2
+		width: 16.66%
+	.col-s-3
+		width: 25%
+	.col-s-4
+		width: 33.33%
+	.col-s-5
+		width: 41.66%
+	.col-s-6
+		width: 50%
+	.col-s-7
+		width: 58.33%
+	.col-s-8
+		width: 66.66%
+	.col-s-9
+		width: 75%
+	.col-s-10
+		width: 83.33%
+	.col-s-11
+		width: 91.66%
+	.col-s-12
+		width: 100%
+
+
+	header
+		height: auto
+
+		&>nav
+			&>ul
+				float: none
+
+				&>li
+					display: inline
+
+
+	.hero 
+		height: 30vh
+		margin-bottom: 0
+
+
+
+	.container 
+		padding: 0 15px
+		text-align: center
+
+
+	ul 
+		text-align: center
+
+	.slogan 
+		display: none
+
+	.slogan2
+		display: block
+
+	.layer
+		background-color: rgba(0,0,0,0)
+		height: 100%
+		width: 100%
+		font-size: 50px
+		color: rgba(0,0,0, 0.7)
+		position: absolute
+		left: 0
+		top: 0
+
+		.fa 
+			background-color: rgba(204, 235, 241, 0.6)
+			padding: 12px
+			+border-radius(8px)
+
+
+
+@media (max-width: $tablet-max) and (orientation: landscape)
+	.hero 
+		height: 50vh
+
+@media (max-width: $tablet-max) and (orientation: portrait)
+	.hero 
+		height: 30vh
+        
+      
+@media (min-width: $desktop-min) and (max-width: $desktop-max)
+	.col-m-6:nth-child(2n+1)
+		clear: both
+
+	.col-m-1
+		width: 8.33%
+	.col-m-2
+		width: 16.66%
+	.col-m-3
+		width: 25%
+	.col-m-4
+		width: 33.33%
+	.col-m-5
+		width: 41.66%
+	.col-m-6
+		width: 50%
+	.col-m-7
+		width: 58.33%
+	.col-m-8
+		width: 66.66%
+	.col-m-9
+		width: 75%
+	.col-m-10
+		width: 83.33%
+	.col-m-11
+		width: 91.66%
+	.col-m-12
+		width: 100%
